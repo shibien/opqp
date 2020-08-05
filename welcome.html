@@ -1,108 +1,149 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Auplusqueparfait</title>
-    <link href="welcome.styles.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Auplusqueparfait</title>
 
-  <body>
-    <header>
-      <div class="header">
-        <div class="top-menu">
-          <div class="search">Search</div>
-          <div class="logo">Auplusqueparfait</div>
-          <div class="top-right-menu">
-            <div class="register">Register</div>
-            <div class="cart">Cart</div>
-          </div>
-        </div>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+		/>
+		<link href="welcome.styles.css" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-        <div class="bottom-menu">
-          <ul class="sub-bottom-menu">
-            <li class="dropdown">
-                <span>SHOP ALL</span>
-                <ul class="features-menu">
-                  <li><a href="#">New</a></li>
-                  <li><a href="#">BestSeller</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-              <span>Technology</span>
-              <ul class="features-menu">
-                <li><a href="#">Mobile</a></li>
-                <li><a href="#">Computer</a></li>
-                <li><a href="#">Console</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <span>Cosmetic</span>
-              <ul class="features-menu">
-                <li><a href="#">Face</a></li>
-                <li><a href="#">Body</a></li>
-                <li><a href="#">Hair</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <span>Fitness</span>
-              <ul class="features-menu">
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Clothes</a></li>
-                <li><a href="#">Supplements</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <span>Wedding</span>
-              <ul class="features-menu">
-                <li><a href="#">Cards</a></li>
-                <li><a href="#">Gifts</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <span>Kitchen</span>
-              <ul class="features-menu">
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Ustensiles</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
+	<body>
+		<header>
+			<div class="header">
+				<div class="top-menu">
+					<div class="search-container">
+						<form action="#" class="search">
+							<input
+								type="text"
+								class="search__input"
+								placeholder="Rechercher"
+							/>
+							<button class="search__button">
+								<svg
+									version="1.1"
+									xmlns="http://www.w3.org/2000/svg"
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+								>
+									<title>magnifying-glass</title>
+									<path
+										d="M17.545 15.467l-3.779-3.779c0.57-0.935 0.898-2.035 0.898-3.21 0-3.417-2.961-6.377-6.378-6.377s-6.186 2.769-6.186 6.186c0 3.416 2.961 6.377 6.377 6.377 1.137 0 2.2-0.309 3.115-0.844l3.799 3.801c0.372 0.371 0.975 0.371 1.346 0l0.943-0.943c0.371-0.371 0.236-0.84-0.135-1.211zM4.004 8.287c0-2.366 1.917-4.283 4.282-4.283s4.474 2.107 4.474 4.474c0 2.365-1.918 4.283-4.283 4.283s-4.473-2.109-4.473-4.474z"
+									></path>
+								</svg>
+							</button>
+						</form>
+					</div>
 
-    <div class="content">
-      <h1>Nos Produits</h1>
-      <p>En cours d'arrivage.</p>
-    </div>
+					<div class="logo-container">
+						<img class="logo" src="img/logo.svg" />
+					</div>
+					<div class="top-right-menu">
+						<div class="register">
+							<img src="img/user.svg" alt="user" class="register-icon" />
 
-    <footer>
-      <div class="footer">
-        <div>
-          <ul>
-            <li>COMPANY</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>HELP</li>
-            <li>FAQ</li>
-            <li>Delivery</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>SOCIAL NETWORK</li>
-            <li>Instagram</li>
-            <li>Facebook</li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  </body>
+							<span class="register-title">S'inscrire / S'authentifier</span>
+						</div>
+						<div class="cart">
+							<img src="img/shopping-bag.svg" alt="cart" class="cart-icon" />
+							<span class="cart-title">Panier</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="bottom-menu">
+					<ul class="sub-bottom-menu">
+						<li class="dropdown">
+							<span>SHOP ALL</span>
+							<span class="arrow">&#9662;</span>
+
+							<ul class="features-menu">
+								<li><a href="#">New</a></li>
+								<li><a href="#">BestSeller</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<span>Technology</span>
+							<ul class="features-menu">
+								<li><a href="#">Mobile</a></li>
+								<li><a href="#">Computer</a></li>
+								<li><a href="#">Console</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<span>Cosmetic</span>
+							<ul class="features-menu">
+								<li><a href="#">Face</a></li>
+								<li><a href="#">Body</a></li>
+								<li><a href="#">Hair</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<span>Fitness</span>
+							<ul class="features-menu">
+								<li><a href="#">Accessories</a></li>
+								<li><a href="#">Clothes</a></li>
+								<li><a href="#">Supplements</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<span>Wedding</span>
+							<ul class="features-menu">
+								<li><a href="#">Cards</a></li>
+								<li><a href="#">Gifts</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<span>Kitchen</span>
+							<ul class="features-menu">
+								<li><a href="#">Accessories</a></li>
+								<li><a href="#">Ustensiles</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<div class="content">
+			<h1>Nos Produits</h1>
+			<p>En cours d'arrivage.</p>
+		</div>
+
+		<footer>
+			<div class="footer">
+				<div>
+					<ul>
+						<li>COMPANY</li>
+						<li>About Us</li>
+						<li>Contact Us</li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li>HELP</li>
+						<li>FAQ</li>
+						<li>Delivery</li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li>SOCIAL NETWORK</li>
+						<li>Instagram</li>
+						<li>Facebook</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+	</body>
 </html>
